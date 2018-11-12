@@ -3,9 +3,10 @@ package projetopoo.controller;
 import projetopoo.Aluno;
 import projetopoo.dao.AlunoDao;
 import projetopoo.dao.PessoaDao;
+import projetopoo.interfacee.InterfaceAluno;
 
 public class AlunoController {
-    private final AlunoDao alunoDao = new AlunoDao();
+    private final InterfaceAluno alunoDao = new AlunoDao();
     private final TurmaController turmaCon = new TurmaController();
     private final PessoaDao pessoaDao = new PessoaDao();
     public double[] procurarMatricula(String matricula) {
